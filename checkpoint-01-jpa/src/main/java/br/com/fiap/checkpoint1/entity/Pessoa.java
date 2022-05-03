@@ -1,0 +1,52 @@
+package br.com.fiap.checkpoint1.entity;
+
+import javax.persistence.Column;
+
+public class Pessoa {
+
+	@Column(name="vl_cpf", length=20, nullable=false)
+	private String cpf;
+	
+	@Column(name="nm_funcionario", length=20, nullable=false)
+	private String nome;
+	
+	@Column(name="vl_idade")
+	private Integer idade;
+	
+	public Pessoa() {}
+
+	public Pessoa(String cpf, String nome, Integer idade) {
+		super();
+		this.cpf = cpf;
+		this.nome = nome;
+		this.idade = idade;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Integer getIdade() {
+		return idade;
+	}
+
+	public void setIdade(Integer idade) {
+		this.idade = idade;
+	}
+	
+	
+	
+
+}
