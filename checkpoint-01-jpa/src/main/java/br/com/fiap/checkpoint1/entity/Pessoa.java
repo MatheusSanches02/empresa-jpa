@@ -1,8 +1,18 @@
 package br.com.fiap.checkpoint1.entity;
 
 import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
+@MappedSuperclass
 public class Pessoa {
+	
+	@Id
+	@Column(name="cd_pessoa")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer idPessoa;
 
 	@Column(name="vl_cpf", length=20, nullable=false)
 	private String cpf;
