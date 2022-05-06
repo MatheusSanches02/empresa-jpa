@@ -8,15 +8,10 @@ import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
 public class Pessoa {
-	
-	@Id
-	@Column(name="cd_pessoa")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer idPessoa;
 
 	@Column(name="vl_cpf", length=20, nullable=false)
 	private String cpf;
-	
+
 	@Column(name="nm_funcionario", length=20, nullable=false)
 	private String nome;
 	

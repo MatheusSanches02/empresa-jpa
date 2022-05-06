@@ -18,10 +18,9 @@ public class Program {
 		EntityManagerFactory factory = EntityManagerFactorySingleton.getInstance();
 		EntityManager em = factory.createEntityManager();
 		
-		Funcionario funcionario = new Funcionario("Matheus", "489.444.136.00", 19,new BigDecimal(1000.0), true, Calendar.getInstance(), null, Produtividade.NORMAL);
+		Funcionario funcionario = new Funcionario("489.444.136.00", "Matheus", 19,new BigDecimal(1000.0), true, Calendar.getInstance(), null, Produtividade.NORMAL);
 		
 		FuncionarioDaoImpl dao = new FuncionarioDaoImpl(em);
-		
 
 		try {
 			dao.create(funcionario);
