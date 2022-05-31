@@ -24,10 +24,10 @@
 			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver" />
 			
 			<!-- Usuario do banco -->
-			<property name="javax.persistence.jdbc.user" value="RM87426"/>
+			<property name="javax.persistence.jdbc.user" value=""/>
 			
 			<!-- Senha do banco -->
-			<property name="javax.persistence.jdbc.password" value="160902"/>
+			<property name="javax.persistence.jdbc.password" value=""/>
 			
 			<!-- String de conexão com o banco -->
 			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl"/>
